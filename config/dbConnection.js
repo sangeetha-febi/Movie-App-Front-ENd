@@ -1,7 +1,10 @@
 const mongoose = require("mongoose");
  const dbConnection = async()=>{
     try{
-        await mongoose.connect(process.env.dbport);
+        await mongoose.connect(process.env.dbport,{
+            ssl:true,
+            tlsAllowInvalidCertificates: false
+        });
         console.log("Database Connected");
     }catch(err)
     {
