@@ -13,7 +13,7 @@ const cors = require("cors");
 
 app.use(express.json());
 app.use(cors({
-    origin: ["https://dreamy-sunflower-34e3fb.netlify.app"], // Allow your Netlify site
+    origin: ["https://fsdfinalproject.netlify.app/"], // Allow your Netlify site
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true 
   }));
