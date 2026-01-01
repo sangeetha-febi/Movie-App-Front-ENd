@@ -13,8 +13,9 @@ const cors = require("cors");
 
 app.use(express.json());
 app.use(cors({
-    origin: ["https://fsdfinalproject.netlify.app/"], // Allow your Netlify site
+    origin: ["https://fsdfinalproject.netlify.app"], // Allow your Netlify site
     methods: ["GET", "POST", "PUT", "DELETE"],
+    allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true 
   }));
 
